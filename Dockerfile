@@ -24,7 +24,7 @@ ENV NODE_OPTIONS="--max-old-space-size=8192"
 
 
 # build = build project directory
-COPY --from=build /usr/src/photo/app/dist /usr/share/nginx/html/photos
+COPY --from=build /usr/src/photo/app/dist /usr/share/nginx/photos/html
 
 EXPOSE 80
 
