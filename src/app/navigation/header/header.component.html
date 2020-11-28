@@ -1,20 +1,34 @@
 <mat-toolbar color="primary">
-  <div fxHide.gt-xs>
-      <button mat-icon-button (click)="onToggleSidenav()">
-          <mat-icon>menu</mat-icon>
-      </button>
-  </div>
-  <div>
-      <a routerLink="/home">Title</a>
-  </div>
-  <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
-      <ul fxLayout fxLayoutGap="15px" class="navigation-items">
-          <li>
-              <a routerLink="/owner">Item 1</a>
+
+    <div class='burger'>
+      <div fxHide.gt-xs>
+        <button mat-icon-button (click)="onToggleSidenav()">
+            <mat-icon>menu</mat-icon>
+        </button>
+      </div>
+      <a class='title' routerLink="/home">Instants de Lili</a>
+    </div>
+
+  <mat-toolbar-row>
+    <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+        <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+            <li>
+                <a routerLink="home">Accueil</a>
+            </li>
+            <li>
+                <a routerLink="portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a routerLink="prices">Tarifs</a>
+            </li>
+            <li>
+                <a routerLink="private-galleries">Galeries Privées</a>
+            </li>
+            <li>
+              <a routerLink="contact">Me contacter</a>
           </li>
-          <li>
-              <a routerLink="/account">Item 2</a>
-          </li>
-      </ul>
-  </div>
+        </ul>
+    </div>
+  </mat-toolbar-row>
+
 </mat-toolbar>

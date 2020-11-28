@@ -1,4 +1,15 @@
-a {
+.burger {
+  display:flex;
+}
+
+.title {
+  font-size: 3em;
+  font-family: 'Tangerine', cursive;
+  color: #fcf9fc;
+  margin:auto;
+}
+
+a{
   text-decoration: none;
   color: white;
 }
@@ -14,7 +25,10 @@ a:hover, a:active{
 }
 
 mat-toolbar{
+  height: 90px;
   border-radius: 3px;
+  background-color: black !important;
+  padding: 15px;
 }
 
 @media(max-width: 959px){
